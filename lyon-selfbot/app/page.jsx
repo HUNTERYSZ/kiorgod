@@ -203,7 +203,7 @@ export default function Home() {
       <main className="login-shell">
         <div className="space-glow" />
         <section className="login-card glass-card">
-          <div className="logo-frame"><img src="/lion-logo.png" alt="Kior" /></div>
+          <div className="logo-frame"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000d9b0820d80c2943934712d0c-9HSXp5TxRN14t743Og6eZkbZOynHjA.png" alt="Kior" /></div>
           <div className="eyebrow"><span className="tiny-star">✦</span> PRIVATE CONTROL ROOM</div>
           <h1><span>@</span>Kior</h1>
           <p className="login-copy">Self-account token spammer. Authorized use only.</p>
@@ -228,7 +228,7 @@ export default function Home() {
 
       <header className="topbar">
         <div className="brand-lockup">
-          <div className="brand-logo"><img src="/lion-logo.png" alt="" /></div>
+          <div className="brand-logo"><img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/file_00000000d9b0820d80c2943934712d0c-9HSXp5TxRN14t743Og6eZkbZOynHjA.png" alt="" /></div>
           <div>
             <div className="brand-name"><span>@</span>Kior</div>
             <div className="brand-subtitle">SELFBOT CONTROL ROOM</div>
@@ -408,7 +408,7 @@ export default function Home() {
       </section>
 
       <footer className="app-footer">
-        <span>✦ @LYON CONTROL ROOM</span>
+        <span>✦ @KIOR CONTROL ROOM</span>
         <span>Use only on accounts and channels you own.</span>
       </footer>
     </main>

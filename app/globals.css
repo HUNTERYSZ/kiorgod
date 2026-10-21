@@ -131,3 +131,14 @@
 
 .add-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1.25rem; }
 @media (max-width: 600px) { .add-grid { grid-template-columns: 1fr; } .global-controls { flex-direction: column; align-items: flex-start; } }
+
+/* Kior red and black theme */
+:root { --gold:#ff3030; --gold2:#ff7070; --gold3:#9f1717; --line:rgba(255,48,48,.24); }
+body { background:radial-gradient(ellipse at 50% -15%,rgba(150,0,0,.22),transparent 40%),radial-gradient(ellipse at 95% 28%,rgba(90,0,0,.2),transparent 35%),linear-gradient(145deg,#050505 0%,#120607 52%,#050505 100%); }
+.login-shell { background:radial-gradient(ellipse at 50% 20%,rgba(180,0,0,.2),transparent 42%),radial-gradient(ellipse at 80% 80%,rgba(70,0,0,.2),transparent 40%),#050505; }
+.button-primary { color:#fff; background:linear-gradient(135deg,#ff5555,#c91414 70%,#8f0b0b); box-shadow:0 7px 24px rgba(220,20,20,.2); }
+.button-secondary { background:rgba(255,48,48,.1); color:#ff8888; border-color:rgba(255,48,48,.3); }
+.pill-active,.tag { color:#ff6b6b; border-color:#ff3030; background:rgba(255,48,48,.16); }
+.brand-logo,.logo-frame { background:#050505; box-shadow:0 0 0 1px rgba(255,48,48,.5),0 0 45px rgba(255,30,30,.16); }
+.brand-logo img,.logo-frame img { mix-blend-mode:normal; }
+.tc-running { border-color:rgba(255,48,48,.45); }
