@@ -1,5 +1,5 @@
-const STATE_KEY = 'lyon:selfbot:v1';
-const LOCK_KEY  = 'lyon:selfbot-lock:v1';
+const STATE_KEY = 'kior:selfbot:v1';
+const LOCK_KEY  = 'kior:selfbot-lock:v1';
 
 export const DEFAULT_STATE = {
   tokens: [],          // [{ id, token, label, message, channelIds, intervalSeconds, status:'idle'|'running'|'stopped', currentIndex:0, sentCount:0, nextSendAt:null, logs:[] }]

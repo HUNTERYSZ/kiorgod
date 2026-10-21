@@ -1,11 +1,11 @@
 import { createHmac, timingSafeEqual } from 'node:crypto';
 
-const COOKIE_NAME = 'lyon_admin_session';
+const COOKIE_NAME = 'kior_admin_session';
 
 function sessionValue() {
   const secret = process.env.SESSION_SECRET;
   if (!secret || secret.length < 32) return null;
-  return createHmac('sha256', secret).update('lyon-admin-session-v1').digest('hex');
+  return createHmac('sha256', secret).update('kior-admin-session-v1').digest('hex');
 }
 
 function safeEqual(a, b) {

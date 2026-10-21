@@ -69,7 +69,7 @@ export default function Home() {
       if (!r.ok) throw new Error(d.error || 'Login failed.');
       setPassword('');
       await loadState();
-      showNotice('Welcome to @Lyon Selfbot.', 'success');
+      showNotice('Welcome to @Kior Selfbot.', 'success');
     } catch (e) {
       showNotice(e.message, 'error');
     } finally { setBusy(false); }
@@ -203,9 +203,9 @@ export default function Home() {
       <main className="login-shell">
         <div className="space-glow" />
         <section className="login-card glass-card">
-          <div className="logo-frame"><img src="/lion-logo.png" alt="Lyon" /></div>
+          <div className="logo-frame"><img src="/lion-logo.png" alt="Kior" /></div>
           <div className="eyebrow"><span className="tiny-star">✦</span> PRIVATE CONTROL ROOM</div>
-          <h1><span>@</span>Lyon</h1>
+          <h1><span>@</span>Kior</h1>
           <p className="login-copy">Self-account token spammer. Authorized use only.</p>
           {notice.msg && <div className={`notice ${notice.type}`}>{notice.msg}</div>}
           <form onSubmit={login} className="login-form">
@@ -230,7 +230,7 @@ export default function Home() {
         <div className="brand-lockup">
           <div className="brand-logo"><img src="/lion-logo.png" alt="" /></div>
           <div>
-            <div className="brand-name"><span>@</span>Lyon</div>
+            <div className="brand-name"><span>@</span>Kior</div>
             <div className="brand-subtitle">SELFBOT CONTROL ROOM</div>
           </div>
         </div>

@@ -1,4 +1,4 @@
-# @Lyon Discord Message Scheduler
+# @Kior Discord Message Scheduler
 
 A Vercel-ready Next.js dashboard for sending a **one-time announcement batch** to authorized Discord channels. It uses an official Discord bot, stores settings and logs in Upstash Redis, and runs scheduled work through Vercel Cron so the browser does not need to stay open.
 

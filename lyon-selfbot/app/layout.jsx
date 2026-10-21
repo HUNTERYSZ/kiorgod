@@ -1,7 +1,7 @@
 import './globals.css';
 
 export const metadata = {
-  title: '@Lyon | Discord Message Scheduler',
+  title: '@Kior | Discord Message Scheduler',
   description: 'A secure, controlled Discord announcement queue for authorized channels.',
 };
 
