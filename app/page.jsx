@@ -45,9 +45,13 @@ export default function Home() {
       setTokens(d.tokens || []);
       setAuth('logged-in');
     } catch (e) {
-      setAuth(cur => cur === 'checking' ? 'error' : cur);
+      // A successful login should still reveal the dashboard if the first
+      // state read fails, so the user can see the storage error and retry.
+      setAuth(cur => cur === 'checking' ? 'error' : 'logged-in');
       if (!quiet) showNotice(e.message, 'error');
+      return false;
     }
+    return true;
   }, []);
 
   useEffect(() => {
@@ -68,6 +72,9 @@ export default function Home() {
       const d = await r.json();
       if (!r.ok) throw new Error(d.error || 'Login failed.');
       setPassword('');
+      // Switch views immediately after the cookie is set. If Redis is
+      // unavailable, the dashboard can show the actionable storage error.
+      setAuth('logged-in');
       await loadState();
       showNotice('Welcome to @Lyon Selfbot.', 'success');
     } catch (e) {
